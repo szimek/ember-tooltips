@@ -106,9 +106,7 @@ export default EmberTooltipBase.extend({
     cancel(this.get('_showTimer'));
 
     later(() => {
-      if (!this.get('_isMouseInside')) {
-        this._hideTooltip();
-      }
+      this._hideTooltip();
     }, +this.get('popoverHideDelay'));
   },
 
