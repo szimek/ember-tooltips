@@ -167,7 +167,7 @@ export default Component.extend({
   _animationDuration: computed(function() {
     const inTestingMode = environment === 'test' || Ember.testing;
 
-    return inTestingMode ? 0 : 200;
+    return inTestingMode ? 0 : 0;
   }),
 
   init() {
